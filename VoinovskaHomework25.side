@@ -1,0 +1,159 @@
+{
+  "id": "4402c1ab-a7c2-4b30-9665-f783435c6429",
+  "version": "2.0",
+  "name": "VoinovskaHomework25",
+  "url": "https://www.amazon.com/",
+  "tests": [{
+    "id": "1db1bdea-b4e2-4c77-8f5e-0e05de2e004f",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "efac5695-821f-4d90-a928-00ca8f01224c",
+    "name": ": Перевірка пошуку товару",
+    "commands": [{
+      "id": "2b3e4d83-8e5c-437d-b29d-898c5dc7a590",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "61934d47-8985-4426-8d90-f72b98a73cd0",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//*[@id=\"twotabsearchtextbox\"]",
+      "targets": [],
+      "value": "laptop"
+    }, {
+      "id": "2023f041-d37d-4e69-9fe4-b84c3a611ffe",
+      "comment": "",
+      "command": "click",
+      "target": "css=input.nav-input[type='submit']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "731a9c1b-01d2-4c73-a103-0d7376dc71b4",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[contains(@class, 's-main-slot')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1a148733-736a-4a6d-bc9e-654ae0cb3687",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.s-search-results .s-result-item",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "330cca33-996c-4665-b57a-b4fac272a32b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=#search > div.s-desktop-width-max.s-desktop-content.s-opposite-dir.s-wide-grid-style.sg-row > div.sg-col-20-of-24.s-matching-dir.sg-col-16-of-20.sg-col.sg-col-8-of-12.sg-col-12-of-16 > div > span.rush-component.s-latency-cf-section > div.s-main-slot.s-result-list.s-search-results.sg-row > div:nth-child(7) > div > div > span > div > div > div > div.puisg-col.puisg-col-4-of-12.puisg-col-8-of-16.puisg-col-12-of-20.puisg-col-12-of-24.puis-list-col-right > div > div > div.a-section.a-spacing-none.puis-padding-right-small.s-title-instructions-style > h2 > a > span",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "78aab838-d72b-4a61-af8f-8667f5485245",
+    "name": "Перевірка фільтрації товарів",
+    "commands": [{
+      "id": "a8c48bb5-a6aa-4e26-a1af-54d582d57641",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "065cf052-fe76-4553-a8aa-226a6401ff87",
+      "comment": "",
+      "command": "type",
+      "target": "css=input#twotabsearchtextbox",
+      "targets": [],
+      "value": "laptop"
+    }, {
+      "id": "812ce51a-757a-4697-aeb5-f1b6da78932a",
+      "comment": "",
+      "command": "click",
+      "target": " css=input.nav-input[type='submit']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e7b5b6d8-3714-4383-9e46-069f857213c8",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": " xpath=//div[contains(@class, 's-main-slot')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4be7f86e-a164-4446-9960-f0020f6754cf",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[text()='HP']/preceding-sibling::div",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1250ac3e-df04-4ec2-8070-0b6bb3a57569",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.s-search-results .s-result-item",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9261e731-4b81-44d5-9411-b87c13cdd144",
+    "name": "Перевірка зміни мови сайту з англійської на іспанську ",
+    "commands": [{
+      "id": "71e6d358-38ac-4eab-b245-d9ceb0376ec1",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ccc05ab4-da9d-4664-8714-c841a42d7317",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=#icp-nav-flyout",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "044bb7e0-af12-4d84-a98a-6219d792cb92",
+      "comment": "",
+      "command": "click",
+      "target": "css=#icp-nav-flyout",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "253283c7-0b50-4441-956e-99448d148ae6",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=#nav-flyout-icp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e9009935-52de-44ae-b263-674264121fa8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//*[@id=\"a-page\"]/div[1]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "63ab6ad5-d6d1-4877-8265-f48658e99396",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//*[@id=\"nav-cart-count-container\"]/span[2]",
+      "targets": [],
+      "value": "Carrito"
+    }]
+  }],
+  "suites": [{
+    "id": "210b66a3-7cb7-4fd4-970d-75ba4edef391",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["1db1bdea-b4e2-4c77-8f5e-0e05de2e004f"]
+  }],
+  "urls": ["https://oldnavy.gap.com/", "https://www.amazon.com/"],
+  "plugins": []
+}
